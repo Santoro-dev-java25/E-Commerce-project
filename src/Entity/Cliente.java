@@ -5,12 +5,12 @@ public class Cliente {
     private String nome;
     private String cpf;
     private String email;
-    Endereco endereco;
+    Entity.Endereco endereco;
 
     public Cliente() {
     }
 
-    public Cliente(String id, String nome, String cpf, Endereco endereco) {
+    public Cliente(String id, String nome, String cpf, Entity.Endereco endereco) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
@@ -45,11 +45,11 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public Endereco getEndereco() {
+    public Entity.Endereco getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(Endereco endereco) {
+    public void setEndereco(Entity.Endereco endereco) {
         this.endereco = endereco;
     }
 }
